@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Self Care - Mental Health App</title>
+  <link rel="stylesheet" href="style14.css">
+</head>
+<body>
+  <h1>Self Care</h1>
+
+  <div id="careContainer">
+    <div class="date-display" id="currentDate"></div>
+
+    <form id="selfCareForm">
+      <label><input type="checkbox" name="care" value="Exercise"> Exercise</label><br>
+      <label><input type="checkbox" name="care" value="Meditation"> Meditation</label><br>
+      <label><input type="checkbox" name="care" value="Sleep Monitor"> Sleep Monitor</label><br>
+      <label><input type="checkbox" name="care" value="Hydration"> Hydration</label><br>
+
+      <button type="button" onclick="submitSelfCare()">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    // Display today's date
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString(undefined, {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+    document.getElementById('currentDate').textContent = "Today: " + formattedDate;
+
+    function submitSelfCare() {
+      const checkboxes = document.querySelectorAll('input[name="care"]:checked');
+      const values = Array.from(checkboxes).map(cb => cb.value);
+      
+      if (values.length === 0) {
+        alert("Please select at least one self-care activity.");
+      } else {
+        console.log("Date:", formattedDate);
+        console.log("Activities Done:", values);
+        alert("Self-care activities saved! (Check console for details)");
+      }
+    }
+  </script>
+</body>
+</html>

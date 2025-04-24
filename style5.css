@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Tracker box */
+  .tracker-box {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Heading */
+  .tracker-box h2 {
+    font-size: 2rem;
+    color: #5f0f40;
+    margin-bottom: 25px;
+  }
+  
+  /* Emoji container */
+  .emoji-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Emoji links */
+  .emoji {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-align: center;
+  }
+  
+  .emoji span {
+    display: block;
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #5f0f40;
+  }
+  
+  .emoji:hover {
+    transform: scale(1.2);
+    color: #7b2cbf;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #cfd9df, #e2ebf0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Reason box */
+  .reason-box {
+    background: #fff;
+    padding: 45px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    animation: slideIn 0.8s ease;
+  }
+  
+  /* Heading */
+  .reason-box h2 {
+    font-size: 1.9rem;
+    color: #5a189a;
+    margin-bottom: 25px;
+  }
+  
+  /* Textarea */
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #7b2cbf;
+    box-shadow: 0 0 8px #d0bfff;
+    outline: none;
+  }

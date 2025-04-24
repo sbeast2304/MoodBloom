@@ -1,0 +1,117 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #c6ffdd, #fbd786, #f7797d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Login box styling */
+  .login-box {
+    background: #ffffffee;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .login-box h2 {
+    font-size: 2rem;
+    color: #5a189a;
+    margin-bottom: 25px;
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #5a189a;
+    margin-bottom: 5px;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1.5px solid #aaa;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #7b2cbf;
+    box-shadow: 0 0 8px #d0bfff;
+    outline: none;
+  }
+  
+  /* Password field container */
+  .password-container {
+    position: relative;
+  }
+  
+  /* Toggle icon inside input */
+  .toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: #7b2cbf;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .toggle-password:hover {
+    color: #5a189a;
+    transform: translateY(-50%) scale(1.2);
+  }
+  
+  /* Submit button */
+  input[type="submit"] {
+    background-color: #7b2cbf;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #5a189a;
+    transform: translateY(-2px);
+  }
+  
+  /* Bottom link text */
+  .login-box p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    color: #7b2cbf;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .login-box a:hover {
+    color: #5a189a;
+  }

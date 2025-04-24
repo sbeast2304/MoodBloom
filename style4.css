@@ -1,0 +1,127 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Registration box container */
+  .register-box {
+    background: #ffffffee;
+    padding: 50px 35px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+    width: 400px;
+    text-align: center;
+    animation: floatBox 1s ease-out;
+  }
+  
+  /* Float-in animation */
+  @keyframes floatBox {
+    from {
+      opacity: 0;
+      transform: translateY(50px) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  /* Heading styling */
+  .register-box h2 {
+    font-size: 2.2rem;
+    color: #5f0f40;
+    margin-bottom: 25px;
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #7b2cbf;
+    margin-bottom: 8px;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 22px;
+    border: 1.5px solid #bbb;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus {
+    border-color: #7b2cbf;
+    box-shadow: 0 0 8px #e0aaff;
+    outline: none;
+  }
+  
+  /* Gender radio buttons */
+  .gender-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 22px;
+  }
+  
+  .gender-group label {
+    font-size: 1rem;
+    color: #5f0f40;
+  }
+  
+  /* Submit button */
+  input[type="submit"] {
+    background-color: #9d4edd;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #7b2cbf;
+    transform: scale(1.05);
+  }
+  
+  /* Bottom text */
+  .register-box p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 15px;
+  }
+  
+  .register-box a {
+    text-decoration: none;
+    color: #7b2cbf;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .register-box a:hover {
+    color: #5a189a;
+  }
